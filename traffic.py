@@ -1,14 +1,4 @@
-"""
-Discrete-event Monte-Carlo traffic simulator (self-contained, fully commented).
 
-Simulates a N x N city grid with:
-- One lane per direction
-- Fixed two-phase traffic signals (N/S and E/W)
-- Cars in-transit along links and stopped at stop-lines
-- Simple turn behavior (left, straight, right)
-"""
-
-# -------------------- Configuration --------------------
 N: int = 4  # Number of intersections in each grid dimension (NxN)
 TOTAL_TICKS: int = 1000  # Total number of simulation time steps
 NORTH: str = "N"  # North direction label
@@ -85,3 +75,4 @@ def incoming_for(node: Node) -> list[tuple[Node, str]]:
     return directions  # Return incoming neighbors
 
 de
+
